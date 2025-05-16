@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  /* list-style: none; */
+}
+/* width */
+.tab-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.tab-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+
+/* Handle */
+.tab-content::-webkit-scrollbar-thumb {
+  background: #224702;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  /* font-weight: 500; */
+  color: #0F1B3F;
+  text-decoration: inherit;
+}
+/* a:hover {
+  color: #253E8B;
+} */
+
+body {
+  @apply font-sans; /* Applies the Poppins font globally */
+}
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+} */
+
+p{
+  font-weight: 400;
+  /* text-align: justify;
+  word-break: break-all; */
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #253E8B;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  /* a:hover {
+    color: #747bff;
+  } */
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+p ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+p ol {
+  list-style: auto; 
+  padding-left: 20px;
+}
+
+
+
+/* swiper slider css */
+/* For English - Align Left */
+.pagination-left {
+  text-align: left !important;
+}
+.pagination-left .swiper-pagination-bullets {
+  left: 110px !important;
+  bottom: 6% !important;
+  right: auto !important;
+}
+
+/* For Other Languages - Align Right */
+.pagination-right {
+  text-align: right !important;
+}
+.pagination-right .swiper-pagination-bullets {
+  right: 110px !important;
+  bottom: 6% !important;
+  left: auto !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  width: 38px !important;
+  height: 8px !important;
+  border-radius: 35px !important;
+  background: #224702 !important;
+}
+
+.swiper-pagination{
+  text-align: start !important;
+}
+
+
+@media (max-width:500px){
+  /* .swiper-pagination-bullets {
+    left: 54% !important;
+    transform: translateX(-50px) !important;
+  } */
+  .pagination-left .swiper-pagination-bullets {
+    left: 54% !important;
+    transform: translateX(-50px) !important;
+  }
+  .pagination-right .swiper-pagination-bullets {
+    right: 24% !important;
+    transform: translateX(-50px) !important;
+  }
+}
+
+/* button css */
+
+.whitebtn{
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  /* padding-inline: 20px; */
+  /* padding-block: 10px; */
+  /* width: 40%; */
+}
+
+.page-title span{
+  color: #3B6430;
+  font-weight: 600;
+}
+
+.product-title span{
+  color: #3B6430;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.heading-title span {
+  font-weight: 600;
+}
+
+.color-green span{
+  color: #3B6430;
+}
+.white span{
+  color: #fff;
+}
+
+.des>p:last-of-type span {
+  color: #fff;
+  background-color: #ffffff12;
+  /* opacity: .1; */
+  padding: 48px;
+  border: 1px solid;
+  border-radius: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.marquee-container {
+  direction: ltr !important; /* Forces left-to-right rendering */
+  overflow: hidden; /* Prevents text from disappearing */
+  white-space: nowrap;
+}
+
